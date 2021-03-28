@@ -1,10 +1,11 @@
 [Unit]
-Description=My flashdrive script trigger
-Requires=run-media-kamil-6CD1\x2dFCA8.mount
-After=run-media-kamil-6CD1\x2dFCA8.mount
+Description=Execute backup job
+Requires=MOUNT_POINT_PLACEHOLDER
+After=MOUNT_POINT_PLACEHOLDER
 
 [Service]
 ExecStart=/usr/local/bin/backup-sd.sh
 
 [Install]
-WantedBy=run-media-kamil-6CD1\x2dFCA8.mount
+WantedBy=MOUNT_POINT_PLACEHOLDER
+
